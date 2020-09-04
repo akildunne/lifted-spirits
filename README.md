@@ -2,11 +2,9 @@
 
 ## Lifted Spirits
 
-The name of your project.
-
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Lifted spirits is a mood tracking app created to help the user become more aware of their everyday triggers. Each day, the user signs into the app and records what they are feeling that day and what activities took place. The app records that information so the user can look back and find patters with mood related to activities and any other notes they log about each day. 
 
 ## API and Data Sample
 
@@ -14,56 +12,51 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+LINKS
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
+- Create and use external api 
 - Render data on page 
-- Allow user to choose favorites 
+- Allow user to move from current page back to home or donut graph of moods overview.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add a calendar tracker so the user can look for patterns in mood throughout months and see progress.
+- Use local storage to save user specific activites.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|September 4| Proposal / Wireframes / Priority Matrix / Timeframes / Project Approval | Incomplete
+|September 5| Core Application Structure (React, JS, CSS, etc.) | Incomplete
+|September 6| Set up API and Compile Icons | Incomplete
+|September 7| Initial Clickable Model | Incomplete
+|September 8| Testing / Bug Fixes / CSS  | Incomplete
+|September 9| MVP | Incomplete
+|September 10| Additional CSS  Styling | Incomplete
+|September 11| Presentations | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+LINK
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+I plan to work on functionality as quickly as possible to make sure I am able to meet my MVPs early. I would like to take more time to style this app to make sure all three screen layouts are how they should be. Given that this is a mood tracker, I want the user to have their mood instantly brightened just by looking at the app.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Core Application | H | 18hrs| hrs | hrs |
+| API Set-up | H | 7hrs| hrs | hrs |
+| Icon and Styling CSS | H | 12hrs| hrs | hrs |
+| Input Form | H | 2hrs| hrs | hrs |
+| Working with API / Use State | H | 6hrs| hrs | hrs |
+| Fine-tuning CSS / Flexbox | H | 8hrs| hrs | hrs |
+| Total | H | 53hrs| hrs | hrs |
 
 ## Code Snippet
 
