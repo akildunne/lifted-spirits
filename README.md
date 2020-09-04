@@ -84,6 +84,18 @@ Lifted spirits is a mood tracking app created to help the user become more aware
 
 ```
 
+## Component Hierarchy
+
+			  App.js
+			/       \
+		   App.css   Components
+			      /  |   | \
+			 Mood	 |   |	Activities
+			Input Section|
+				     |
+				Dashboard
+
+
 ## Wireframes
 
 Mobile Version - 
@@ -143,8 +155,7 @@ I plan to work on functionality as quickly as possible to make sure I am able to
 | Total | H | 53hrs| hrs | hrs |
 
 ## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+ 
 
 ```
 function reverse(string) {
