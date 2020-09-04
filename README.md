@@ -113,14 +113,16 @@ Mood - https://imgur.com/uICdXuc
 #### MVP 
 
 - Create and use external api. 
-- Render data on page. 
+- Create clickable buttons for user to choose mood and options.
+- Render data on dashboard page. 
 - Allow user to move from current page back to home.
 
 #### PostMVP  
 
+- Provide donut graph of moods overview and progress on dashboard.
 - Add a calendar tracker so the user can look for patterns in mood throughout months and see progress.
-- Use local storage to save user specific activites.
-- Provide donut graph of moods overview and progress.
+- Use local storage to save user specific activity options.
+- Update API for multi-user sign-in.
 
 ## Project Schedule
 
