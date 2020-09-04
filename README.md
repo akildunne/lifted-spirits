@@ -142,10 +142,10 @@ https://imgur.com/5HdyGXu
 
 ## SWOT Analysis
 
-Strengths - Planning and styling are my strengths, so I already have a clear vision in mind to expedite the CSS process.
-Weaknesses - I usually struggle with getting started and knowing how to begin. My worry is that I will also lose a lot of time this weekend on working out the functionality of the app.
-Opportunities - My plan is to just get as far as I possibly can over the weekend and take time to rewatch lab videos as needed so that I can do as much on my own as possible. I’d really like to get better about being able to work more independently.
-Threats - Losing time being stuck is my biggest threat in this project so far, so I’m going to try to work out problems as best I can. 
+- Strengths : Planning and styling are my strengths, so I already have a clear vision in mind to expedite the CSS process.
+- Weaknesses : I usually struggle with getting started and knowing how to begin. My worry is that I will also lose a lot of time this weekend on working out the functionality of the app.
+- Opportunities : My plan is to just get as far as I possibly can over the weekend and take time to rewatch lab videos as needed so that I can do as much on my own as possible. I’d really like to get better about being able to work more independently.
+- Threats : Losing time being stuck is my biggest threat in this project so far, so I’m going to try to work out problems as best I can. 
 
 
 ## Timeframes
