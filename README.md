@@ -92,8 +92,8 @@ LINKS
 
 #### MVP 
 
-- Create and use external api 
-- Render data on page 
+- Create and use external api. 
+- Render data on page. 
 - Allow user to move from current page back to home.
 
 #### PostMVP  
@@ -122,6 +122,7 @@ https://imgur.com/5HdyGXu
 ## Timeframes
 
 I plan to work on functionality as quickly as possible to make sure I am able to meet my MVPs early. I would like to take more time to style this app to make sure all three screen layouts are how they should be. Given that this is a mood tracker, I want the user to have their mood instantly brightened just by looking at the app.
+
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
