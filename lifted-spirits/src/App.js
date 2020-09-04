@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import Activities from './Activities';
 // import Dashboard from './Dashboard';
 // import Journal from './Journal';
-// import Mood from './Mood';
+import Mood from './Mood';
 // import Summary from './Summary';
 import axios from 'axios';
 import './App.css';
@@ -26,7 +26,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-     
+     <Mood/>
     </div>
   );
 }
