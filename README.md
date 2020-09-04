@@ -1,6 +1,6 @@
 # Project Overview
 
-## Mood Tracker
+## Lifted Spirits
 
 The name of your project.
 
