@@ -94,12 +94,13 @@ LINKS
 
 - Create and use external api 
 - Render data on page 
-- Allow user to move from current page back to home or donut graph of moods overview.
+- Allow user to move from current page back to home.
 
 #### PostMVP  
 
 - Add a calendar tracker so the user can look for patterns in mood throughout months and see progress.
 - Use local storage to save user specific activites.
+- Provide donut graph of moods overview and progress.
 
 ## Project Schedule
 
