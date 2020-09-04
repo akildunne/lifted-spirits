@@ -21,17 +21,67 @@ Lifted spirits is a mood tracking app created to help the user become more aware
         },
         {
             "id": "recJaBjWQMa4f0cdC",
-            "fields": {},
+            "fields": {
+                "Name": "Jessica",
+                "Angry Mood": true
+            },
             "createdTime": "2020-09-03T21:50:42.000Z"
         },
         {
             "id": "recnV1ui4qdkzskmX",
-            "fields": {},
+            "fields": {
+                "Name": "Drew",
+                "Happy Mood": true
+            },
             "createdTime": "2020-09-03T21:50:42.000Z"
         }
     ],
     "offset": "recnV1ui4qdkzskmX"
 }
+
+{
+    "records": [
+        {
+            "id": "recs3BFZ6y4Y5Mi5K",
+            "fields": {
+                "Name": "Ashley",
+                "Work": true,
+                "Family Time": true,
+                "Meditate": true,
+                "Journal": "Today was a great day. I felt really productive but not rushed.",
+                "Date Entry": "2020-09-03"
+            },
+            "createdTime": "2020-09-04T03:08:21.000Z"
+        },
+        {
+            "id": "recRUbRdZgEG6HQrc",
+            "fields": {
+                "Name": "Jessica",
+                "Family Time": true,
+                "Clean": true,
+                "Errands": true,
+                "Journal": "Family time was really stressful today and I just felt too busy to relax. I'm going to try to take more breaks tomorrow.\n",
+                "Date Entry": "2020-09-03"
+            },
+            "createdTime": "2020-09-04T03:08:21.000Z"
+        },
+        {
+            "id": "rec2CSqI9AJz8ZC6T",
+            "fields": {
+                "Name": "Drew",
+                "Work": true,
+                "Exercise": true,
+                "Read": true,
+                "Meditate": true,
+                "Journal": "Work went so well today, I got such positive reviews on my presentation!\n",
+                "Date Entry": "2020-09-03"
+            },
+            "createdTime": "2020-09-04T03:08:21.000Z"
+        }
+    ],
+    "offset": "rec2CSqI9AJz8ZC6T"
+}
+
 ```
 
 ## Wireframes
