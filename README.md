@@ -86,7 +86,15 @@ Lifted spirits is a mood tracking app created to help the user become more aware
 
 ## Wireframes
 
-LINKS
+Mobile Version - 
+Mood - https://imgur.com/5EJ7KJG  Activities - https://imgur.com/sp2Kihh  Input - https://imgur.com/iEWBzcB
+
+Ipad Version -
+Mood - https://imgur.com/zxxqs18
+
+Desktop Version -
+Mood - https://imgur.com/uICdXuc
+
 
 ### MVP/PostMVP  
 
