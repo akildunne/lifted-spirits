@@ -8,7 +8,31 @@ Lifted spirits is a mood tracking app created to help the user become more aware
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```
+{
+    "records": [
+        {
+            "id": "recv9u6TwTGO7ksDt",
+            "fields": {
+                "Name": "Ashley",
+                "Happy Mood": true
+            },
+            "createdTime": "2020-09-03T21:50:42.000Z"
+        },
+        {
+            "id": "recJaBjWQMa4f0cdC",
+            "fields": {},
+            "createdTime": "2020-09-03T21:50:42.000Z"
+        },
+        {
+            "id": "recnV1ui4qdkzskmX",
+            "fields": {},
+            "createdTime": "2020-09-03T21:50:42.000Z"
+        }
+    ],
+    "offset": "recnV1ui4qdkzskmX"
+}
+```
 
 ## Wireframes
 
