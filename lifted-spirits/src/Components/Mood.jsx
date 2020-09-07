@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios';
 
 
 const Mood = () => {
@@ -10,8 +11,19 @@ const Mood = () => {
     { icon: <i className="fas fa-angry"></i>, name: 'angry' },
     { icon: <i className="fas fa-meh-rolling-eyes"></i>, name: 'annoyed' }]
   
-  const handleSubmit = (name) => {
-    console.log(name)
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const fields = {
+      mood
+    };
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
+      const response = await axios.post(airtableURL, { fields }, {
+        headers: {
+          'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      });
+    console.log(response);
   }
 
   return (
