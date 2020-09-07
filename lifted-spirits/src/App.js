@@ -26,7 +26,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Mood userInfo={userInfo}/>
+      <Mood userInfo={userInfo} />
+      {/* <Journal /> */}
     </div>
   );
 }

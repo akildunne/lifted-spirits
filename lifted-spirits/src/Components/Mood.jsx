@@ -14,7 +14,7 @@ const Mood = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const fields = {
-      mood
+      // mood
     };
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
       const response = await axios.post(airtableURL, { fields }, {
