@@ -9,4 +9,14 @@ const Activities = (props) => {
   )
 }
 
+// {moodInfo.map(mood => (
+// 	//if true render the string
+//     <div>{mood.field.read ? 'read' : null}</div>
+//     <div>{mood.field.exercise ? 'exercise' : null} </div>
+//     etc, etc...
+	
+// 	//render the mood
+// 	<div>{mood.field.mood}</div>
+// ))
+
 export default Mood;
