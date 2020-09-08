@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route, Link } from "react-router-dom";
-// import Activities from './Components/Activities';
+import Activities from './Components/Activities';
 // import Dashboard from './Components/Dashboard';
 import Journal from './Components/Journal';
 import Mood from "./Components/Mood";
@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   const [userInfo, setUserInfo] = useState([]);
   const [mood, setMood] = useState("");
-  // const [activity, setActivity] = useState([]);
+  const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState('');
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function App() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      // console.log(response.data.records);
+      console.log(response.data.records);
       setUserInfo(response.data.records);
     };
     getUserInfo();
@@ -34,14 +34,17 @@ function App() {
         <h1>Lifted Spirits</h1>
         </header>
       <main>
-        {/* <Switch> */}
-          <Route path="/mood">
+        <Switch>
+          <Route exact path="/">
             <Mood setMood={setMood} />
-          </Route>
+        </Route>
+        <Route path='/activities'>
+          <Activities setActivities={setActivities}/>
+        </Route>
           <Route path='/journal'>
             <Journal setJournal={setJournal} />
             </Route>
-        {/* </Switch> */}
+        </Switch>
       </main>
     </div>
   );

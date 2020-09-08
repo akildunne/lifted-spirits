@@ -1,9 +1,9 @@
 //input form
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Journal = (props) => {
-  const [entry, setEntry] = useState('Write about what happened today.');
+  const [entry, setEntry] = useState('');
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -21,10 +21,11 @@ const Journal = (props) => {
   // }
 
   return (
-    <form onSubmit={props.setJournal}>
+    <form onSubmit={props.setJournal(entry)}>
       <label htmlFor='journal'></label>
       <textarea
         name='journal'
+        placeholder= 'Write about what happened today.'
         type='text'
         value={entry}
         onChange={(e) => setEntry(e.target.value)}

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Activities = (props) => {
-  const activity = [
+  // const [activities, setActivities] = useState([]);
+
+
+  const activitiesIcons = [
     { icon: <i class="fas fa-utensils"></i>, name: 'date' },
     { icon: <i class="fas fa-briefcase"></i>, name: 'work' },
     { icon: <i class="fas fa-running"></i>, name: 'exercise' },
@@ -13,11 +16,23 @@ const Activities = (props) => {
     { icon: <i class="fas fa-luggage-cart"></i>, name: 'travel' },
     { icon: <i class="fas fa-clipboard-list"></i>, name: 'errands'}
   ]
+
+  const collectActivities = []
+
+  const compileActivities = (name) => {
+    if (!collectActivities.includes(name)) {
+      collectActivities.push(name)
+    } 
+    console.log(collectActivities)
+  }
+
   return ( 
     <div>
-      <h2>Activities : </h2>
-    </div>
+      <h2>Hello</h2>
+      {activitiesIcons.map(activity => <div onClick={() => compileActivities(activity.name)}>{activity.icon}</div>)}
+      <button onClick={() => props.setActivities(collectActivities)}>Save</button>
+  </div>
   )
 }
 
-export default Mood;
+export default Activities;

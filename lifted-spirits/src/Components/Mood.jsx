@@ -1,8 +1,10 @@
-import React from "react";
-// import axios from 'axios';
+import React, {useState} from "react";
+import { Redirect } from 'react-router-dom';
 
 
 const Mood = (props) => {
+  const [redirect, setRedirect] = useState(false);
+
   const moods = [
     { icon: <i className="fas fa-smile"></i>, name: 'happy' },
     { icon: <i className="fas fa-frown"></i>, name: 'sad' },
@@ -11,25 +13,17 @@ const Mood = (props) => {
     { icon: <i className="fas fa-angry"></i>, name: 'angry' },
     { icon: <i className="fas fa-meh-rolling-eyes"></i>, name: 'annoyed' }]
   
-  // const handleSubmit = async (mood) => {
-  //   const fields = {
-  //     mood
-  //   };
-  //   const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
-  //     const response = await axios.post(airtableURL, { fields }, {
-  //       headers: {
-  //         'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //         'Content-Type': 'application/json'
-  //       }
-  //     });
-  //   console.log(response);
-  // }
-
+  const setMood = (name) => {
+    props.setMood(name)
+    setRedirect(true)
+  }
+  redirect === true ? <Redirect to='/activities' /> : null
+  
   return (
-    
     <div>
-      {moods.map(mood => <div onClick={(e) => props.setMood(mood.name)}>{mood.icon}</div>)}
+      {moods.map(mood => <div onClick={(e) => setMood(mood.name)}>{mood.icon}</div>)}
     </div>
+
   );
 };
 
