@@ -13,21 +13,39 @@ function App() {
   const [userInfo, setUserInfo] = useState([]);
   const [mood, setMood] = useState("");
   const [activities, setActivities] = useState([]);
-  const [journal, setJournal] = useState('');
+  const [journal, setJournal] = useState("");
 
-  useEffect(() => {
-    const getUserInfo = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood/?Grid%20View`;
-      const response = await axios.get(airtableURL, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      });
-      console.log(response.data.records);
-      setUserInfo(response.data.records);
-    };
-    getUserInfo();
-  }, []);
+  // useEffect(() => {
+  //   const getUserInfo = async () => {
+  //     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood/?Grid%20View`;
+  //     const response = await axios.get(airtableURL, {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+  //       },
+  //     });
+  //     console.log(response.data.records);
+  //     setUserInfo(response.data.records);
+  //   };
+  //   getUserInfo();
+  // }, []);
+
+  const postInfo = async () => {
+    // const fields = {
+    //   // mood,
+    //   // activities,
+    //   journal
+    // };
+    // const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
+    // let response = await axios.post(airtableURL, { fields }, {
+    //   headers: {
+    //     'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+    //     'Content-Type': 'application/json',
+    //   }
+    // });
+    console.log(journal)
+  }
+  
+
   return (
     <div className="page-container">
       <header>
@@ -42,7 +60,7 @@ function App() {
           <Activities setActivities={setActivities}/>
         </Route>
           <Route path='/journal'>
-            <Journal setJournal={setJournal} />
+            <Journal setJournal={setJournal} postInfo={postInfo}/>
             </Route>
         </Switch>
       </main>

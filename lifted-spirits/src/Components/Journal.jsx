@@ -1,27 +1,22 @@
 //input form
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 // import axios from 'axios';
 
 const Journal = (props) => {
   const [entry, setEntry] = useState('');
+  const [redirect, setRedirect] = useState(false);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const fields = {
-  //     journal
-  //   };
-  //   const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
-  //   await axios.post(airtableURL, { fields }, {
-  //     headers: {
-  //       'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //       'Content-Type': 'application/json',
-  //     }
-  //   });
-  //   setEntry('');
-  // }
+  const postInfo = async (event) => {
+    event.preventDefault();
+    await props.setJournal(entry)
+    setRedirect(true)
+  }
+
+  if (redirect === true) { return <Redirect to='/summary' /> } 
 
   return (
-    <form onSubmit={props.setJournal(entry)}>
+    <form onSubmit={postInfo}>
       <label htmlFor='journal'></label>
       <textarea
         name='journal'

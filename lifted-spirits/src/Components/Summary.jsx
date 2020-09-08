@@ -1,16 +1,12 @@
-//will be iported from mood, activities and journal
-// import React from 'react';
+import React, {useState} from 'react';
 
+const Summary = (props) => {
+ 
+  return ( 
+    <div>
+      hello
+    </div>
+  )
+}
 
-
-// const Summary = (props) => {
-//   const { moodInfo } = props
-//   // const { happy, sad, meh, angry } = props.mood.fields
-//   return ( 
-//     <div>
-//       <h1>Mood : {props.happy}</h1>
-//     </div>
-//   )
-// }
-
-// export default Summary;
+export default Summary;

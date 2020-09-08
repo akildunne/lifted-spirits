@@ -17,11 +17,12 @@ const Mood = (props) => {
     props.setMood(name)
     setRedirect(true)
   }
-  redirect === true ? <Redirect to='/activities' /> : null
+
+  if (redirect === true) { return <Redirect to='/activities' /> } 
   
   return (
     <div>
-      {moods.map(mood => <div onClick={(e) => setMood(mood.name)}>{mood.icon}</div>)}
+      {moods.map((mood, index) => <div key={index} onClick={(e) => setMood(mood.name)}>{mood.icon}</div>)}
     </div>
 
   );

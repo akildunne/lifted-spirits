@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 
 const Activities = (props) => {
-  // const [activities, setActivities] = useState([]);
-
+  const [redirect, setRedirect] = useState(false);
 
   const activitiesIcons = [
-    { icon: <i class="fas fa-utensils"></i>, name: 'date' },
-    { icon: <i class="fas fa-briefcase"></i>, name: 'work' },
-    { icon: <i class="fas fa-running"></i>, name: 'exercise' },
-    { icon: <i class="fas fa-baby"></i>, name: 'family' },
-    { icon: <i class="fas fa-book"></i>, name: 'read' },
-    { icon: <i class="fas fa-pray"></i>, name: 'meditate' },
-    { icon: <i class="fas fa-broom"></i>, name: 'clean' },
-    { icon: <i class="fas fa-video"></i>, name: 'movie' },
-    { icon: <i class="fas fa-luggage-cart"></i>, name: 'travel' },
-    { icon: <i class="fas fa-clipboard-list"></i>, name: 'errands'}
+    { icon: <i className="fas fa-utensils"></i>, name: 'date' },
+    { icon: <i className="fas fa-briefcase"></i>, name: 'work' },
+    { icon: <i className="fas fa-running"></i>, name: 'exercise' },
+    { icon: <i className="fas fa-baby"></i>, name: 'family' },
+    { icon: <i className="fas fa-book"></i>, name: 'read' },
+    { icon: <i className="fas fa-pray"></i>, name: 'meditate' },
+    { icon: <i className="fas fa-broom"></i>, name: 'clean' },
+    { icon: <i className="fas fa-video"></i>, name: 'movie' },
+    { icon: <i className="fas fa-luggage-cart"></i>, name: 'travel' },
+    { icon: <i className="fas fa-clipboard-list"></i>, name: 'errands'}
   ]
 
   const collectActivities = []
@@ -26,11 +26,18 @@ const Activities = (props) => {
     console.log(collectActivities)
   }
 
+  const setActivities = (name) => {
+    props.setActivities(name)
+    setRedirect(true)
+  }
+
+  if (redirect === true) { return <Redirect to='/journal' /> } 
+
   return ( 
     <div>
       <h2>Hello</h2>
-      {activitiesIcons.map(activity => <div onClick={() => compileActivities(activity.name)}>{activity.icon}</div>)}
-      <button onClick={() => props.setActivities(collectActivities)}>Save</button>
+      {activitiesIcons.map((activity, index) => <div key={index} onClick={() => compileActivities(activity.name)}>{activity.icon}</div>)}
+      <button onClick={() => setActivities(collectActivities)}>Save</button>
   </div>
   )
 }
