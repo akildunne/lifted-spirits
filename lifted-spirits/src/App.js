@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { Switch, Route, useHistory, Link } from "react-router-dom";
 import Activities from "./Components/Activities";
 // import Dashboard from './Components/Dashboard';
 import Journal from "./Components/Journal";
@@ -48,6 +48,8 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
+            <h2>Hello Finley!</h2>
+            <h3>How are you feeling today?</h3>
             <Mood setMood={setMood} />
           </Route>
           <Route path="/activities">
@@ -62,11 +64,15 @@ function App() {
         </Switch>
       </main>
       <footer>
-        <div className="footer-icon">
-          <i class="fas fa-home"></i>
-          <i class="fas fa-chart-pie"></i>
-          <i class="far fa-calendar-alt"></i>
-        </div>
+        <nav>
+          <div className="footer-icon">
+            <Link to="/">
+              <i class="fas fa-home"></i>
+            </Link>
+            <i class="fas fa-chart-pie"></i>
+            <i class="far fa-calendar-alt"></i>
+          </div>
+        </nav>
       </footer>
     </div>
   );
