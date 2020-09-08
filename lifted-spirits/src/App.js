@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Activities from './Components/Activities';
 // import Dashboard from './Components/Dashboard';
 import Journal from './Components/Journal';
@@ -15,19 +15,11 @@ function App() {
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
 
-  // useEffect(() => {
-  //   const getUserInfo = async () => {
-  //     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood/?Grid%20View`;
-  //     const response = await axios.get(airtableURL, {
-  //       headers: {
-  //         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //       },
-  //     });
-  //     console.log(response.data.records);
-  //     setUserInfo(response.data.records);
-  //   };
-  //   getUserInfo();
-  // }, []);
+  const history = useHistory()
+
+  useEffect(() => {
+   history.push('./')
+  }, []);
 
   const postInfo = async (newJournal) => {
     const fields = {
@@ -62,7 +54,7 @@ function App() {
             <Journal setJournal={setJournal} postInfo={postInfo}/>
           </Route>
           <Route path='/summary'>
-            <Summary/>
+            <Summary mood={mood} activities={activities} journal={journal}/>
           </Route>
         </Switch>
       </main>

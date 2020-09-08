@@ -22,7 +22,7 @@ const Mood = (props) => {
   
   return (
     <div>
-      {moods.map((mood, index) => <div key={index} onClick={(e) => setMood(mood.name)}>{mood.icon}</div>)}
+      {moods.map((mood, index) => <div key={index} onClick={(e) => setMood(mood.name)}><div className='mood-icon'>{mood.icon}</div></div>)}
     </div>
 
   );

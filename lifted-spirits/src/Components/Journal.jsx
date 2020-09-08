@@ -14,8 +14,6 @@ const Journal = (props) => {
     history.push('/summary')
   }
 
-  
-
   return (
     <form onSubmit={postInfo}>
       <label htmlFor='journal'></label>
