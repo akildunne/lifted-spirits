@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 // import Activities from './Components/Activities';
 // import Dashboard from './Components/Dashboard';
 import Journal from './Components/Journal';
@@ -30,16 +30,18 @@ function App() {
   }, []);
   return (
     <div className="page-container">
-      <header>Lifted Spirits</header>
+      <header>
+        <h1>Lifted Spirits</h1>
+        </header>
       <main>
-        <Switch>
+        {/* <Switch> */}
           <Route path="/mood">
             <Mood setMood={setMood} />
           </Route>
           <Route path='/journal'>
             <Journal setJournal={setJournal} />
             </Route>
-        </Switch>
+        {/* </Switch> */}
       </main>
     </div>
   );
