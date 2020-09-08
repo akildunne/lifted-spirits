@@ -4,7 +4,7 @@ import Activities from './Components/Activities';
 // import Dashboard from './Components/Dashboard';
 import Journal from './Components/Journal';
 import Mood from "./Components/Mood";
-// import Summary from './Components/Summary';
+import Summary from './Components/Summary';
 import axios from "axios";
 import "./App.css";
 
@@ -29,22 +29,21 @@ function App() {
   //   getUserInfo();
   // }, []);
 
-  const postInfo = async () => {
-    // const fields = {
-    //   // mood,
-    //   // activities,
-    //   journal
-    // };
-    // const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
-    // let response = await axios.post(airtableURL, { fields }, {
-    //   headers: {
-    //     'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-    //     'Content-Type': 'application/json',
-    //   }
-    // });
+  const postInfo = async (newJournal) => {
+    const fields = {
+      mood,
+      activities,
+      journal: newJournal
+    };
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
+    let response = await axios.post(airtableURL, { fields }, {
+      headers: {
+        'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        'Content-Type': 'application/json',
+      }
+    });
     console.log(journal)
   }
-  
 
   return (
     <div className="page-container">
@@ -61,7 +60,10 @@ function App() {
         </Route>
           <Route path='/journal'>
             <Journal setJournal={setJournal} postInfo={postInfo}/>
-            </Route>
+          </Route>
+          <Route path='/summary'>
+            <Summary/>
+          </Route>
         </Switch>
       </main>
     </div>

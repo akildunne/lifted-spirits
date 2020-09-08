@@ -1,19 +1,20 @@
 //input form
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 // import axios from 'axios';
 
 const Journal = (props) => {
   const [entry, setEntry] = useState('');
-  const [redirect, setRedirect] = useState(false);
+  const history = useHistory()
 
   const postInfo = async (event) => {
     event.preventDefault();
-    await props.setJournal(entry)
-    setRedirect(true)
+    await props.setJournal(entry);
+    await props.postInfo(entry)
+    history.push('/summary')
   }
 
-  if (redirect === true) { return <Redirect to='/summary' /> } 
+  
 
   return (
     <form onSubmit={postInfo}>

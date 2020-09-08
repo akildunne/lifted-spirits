@@ -5,16 +5,16 @@ const Activities = (props) => {
   const [redirect, setRedirect] = useState(false);
 
   const activitiesIcons = [
-    { icon: <i className="fas fa-utensils"></i>, name: 'date' },
-    { icon: <i className="fas fa-briefcase"></i>, name: 'work' },
-    { icon: <i className="fas fa-running"></i>, name: 'exercise' },
-    { icon: <i className="fas fa-baby"></i>, name: 'family' },
-    { icon: <i className="fas fa-book"></i>, name: 'read' },
-    { icon: <i className="fas fa-pray"></i>, name: 'meditate' },
-    { icon: <i className="fas fa-broom"></i>, name: 'clean' },
-    { icon: <i className="fas fa-video"></i>, name: 'movie' },
-    { icon: <i className="fas fa-luggage-cart"></i>, name: 'travel' },
-    { icon: <i className="fas fa-clipboard-list"></i>, name: 'errands'}
+    { icon: <i className="fas fa-utensils"></i>, name: 'Date' },
+    { icon: <i className="fas fa-briefcase"></i>, name: 'Work' },
+    { icon: <i className="fas fa-running"></i>, name: 'Exercise' },
+    { icon: <i className="fas fa-baby"></i>, name: 'Family' },
+    { icon: <i className="fas fa-book"></i>, name: 'Read' },
+    { icon: <i className="fas fa-pray"></i>, name: 'Meditate' },
+    { icon: <i className="fas fa-broom"></i>, name: 'Clean' },
+    { icon: <i className="fas fa-video"></i>, name: 'Movie' },
+    { icon: <i className="fas fa-luggage-cart"></i>, name: 'Travel' },
+    { icon: <i className="fas fa-clipboard-list"></i>, name: 'Errands'}
   ]
 
   const collectActivities = []
