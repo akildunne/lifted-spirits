@@ -9,7 +9,6 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [userInfo, setUserInfo] = useState([]);
   const [mood, setMood] = useState("");
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
@@ -67,10 +66,10 @@ function App() {
         <nav>
           <div className="footer-icon">
             <Link to="/">
-              <i class="fas fa-home"></i>
+              <i className="fas fa-home"></i>
             </Link>
-            <i class="fas fa-chart-pie"></i>
-            <i class="far fa-calendar-alt"></i>
+            <i className="fas fa-chart-pie"></i>
+            <i className="far fa-calendar-alt"></i>
           </div>
         </nav>
       </footer>
