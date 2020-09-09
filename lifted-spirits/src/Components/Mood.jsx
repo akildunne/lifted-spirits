@@ -1,30 +1,39 @@
-import React, {useState} from "react";
-import { Redirect } from 'react-router-dom';
-
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 
 const Mood = (props) => {
   const [redirect, setRedirect] = useState(false);
 
   const moods = [
-    { icon: <i className="far fa-smile"></i>, name: 'happy' },
-    { icon: <i className="far fa-frown"></i>, name: 'sad' },
-    { icon: <i className="far fa-meh"></i>, name: 'meh' },
-    { icon: <i className="far fa-laugh-squint"></i>, name: 'excited' },
-    { icon: <i className="far fa-angry"></i>, name: 'angry' },
-    { icon: <i className="far fa-meh-rolling-eyes"></i>, name: 'annoyed' }]
-  
+    { icon: <i className="far fa-smile"></i>, name: "happy" },
+    { icon: <i className="far fa-frown"></i>, name: "sad" },
+    { icon: <i className="far fa-meh"></i>, name: "meh" },
+    { icon: <i className="far fa-laugh-squint"></i>, name: "excited" },
+    { icon: <i className="far fa-angry"></i>, name: "angry" },
+    { icon: <i className="far fa-meh-rolling-eyes"></i>, name: "annoyed" },
+  ];
+
   const setMood = (name) => {
-    props.setMood(name)
-    setRedirect(true)
+    props.setMood(name);
+    setRedirect(true);
+  };
+
+  if (redirect === true) {
+    return <Redirect to="/activities" />;
   }
 
-  if (redirect === true) { return <Redirect to='/activities' /> } 
-  
   return (
-    <div className='mood-display'>
-      {moods.map((mood, index) => <div key={index} onClick={(e) => setMood(mood.name)}><div className='mood-icon'>{mood.icon}</div></div>)}
+    <div>
+      <h2>Hello Finley!</h2>
+      <h3>How are you feeling today?</h3>
+      <div className="mood-body">
+        {moods.map((mood, index) => (
+          <div key={index} onClick={(e) => setMood(mood.name)}>
+            <div className="mood-icon">{mood.icon}</div>
+          </div>
+        ))}
+      </div>
     </div>
-
   );
 };
 

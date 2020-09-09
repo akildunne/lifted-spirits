@@ -47,8 +47,6 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <h2>Hello Finley!</h2>
-            <h3>How are you feeling today?</h3>
             <Mood setMood={setMood} />
           </Route>
           <Route path="/activities">
