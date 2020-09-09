@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import * as am4core from "@amcharts/amcharts4/core";
+import * as am4charts from "@amcharts/amcharts4/charts";
 
 function Dashboard() {
   const [userInfo, setUserInfo] = useState([]);
@@ -26,7 +28,7 @@ function Dashboard() {
           <h4>{mood.fields.date_entry}</h4>
           <h4>{mood.fields.mood}</h4>
           <h4>{mood.fields.activities}</h4>
-            <h4>{mood.fields.journal}</h4>
+          <h4>{mood.fields.journal}</h4>
             </>
         ))
       }

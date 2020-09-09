@@ -136,6 +136,10 @@ form {
     margin: 35px 35px 0px 16px;
 }
 
+.dashboard {
+  background-color: #FBF3EE;
+}
+
 .footer-icon {
   display: flex;
   color: #0C1052;
