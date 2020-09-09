@@ -32,12 +32,24 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 25px;
-  margin: 40px 16px 16px 16px;
+  margin: 45px 16px 8px 16px;
 }
 
 h3 {
   font-size: 20px;
-  margin: 17px;
+  margin: 0 17px;
+}
+
+.summary-h {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 10px;
+  width: 100%;
+ 
 }
 
 main {
@@ -99,8 +111,29 @@ main {
   margin: 10px;
 }
 
-.activity {
-  color: blue;
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    margin: 35px 35px 0 35px;
+}
+
+.journal-input {
+  width: 341px;
+  height: 225px;
+  border-color: #F1C920;
+  border-radius: 10px;
+}
+
+.summary-body {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    margin: 35px 35px 0px 16px;
 }
 
 .footer-icon {

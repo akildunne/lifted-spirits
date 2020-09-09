@@ -5,12 +5,12 @@ const Mood = (props) => {
   const [redirect, setRedirect] = useState(false);
 
   const moods = [
-    { icon: <i className="far fa-smile"></i>, name: "happy" },
-    { icon: <i className="far fa-frown"></i>, name: "sad" },
-    { icon: <i className="far fa-meh"></i>, name: "meh" },
-    { icon: <i className="far fa-laugh-squint"></i>, name: "excited" },
-    { icon: <i className="far fa-angry"></i>, name: "angry" },
-    { icon: <i className="far fa-meh-rolling-eyes"></i>, name: "annoyed" },
+    { icon: <i className="far fa-smile"></i>, name: "Happy" },
+    { icon: <i className="far fa-frown"></i>, name: "Sad" },
+    { icon: <i className="far fa-meh"></i>, name: "Meh" },
+    { icon: <i className="far fa-laugh-squint"></i>, name: "Excited" },
+    { icon: <i className="far fa-angry"></i>, name: "Angry" },
+    { icon: <i className="far fa-meh-rolling-eyes"></i>, name: "Annoyed" },
   ];
 
   const setMood = (name) => {
