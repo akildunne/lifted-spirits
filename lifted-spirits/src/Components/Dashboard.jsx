@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
-
+import axios from "axios";
 
 function Dashboard() {
   const [userInfo, setUserInfo] = useState([]);
@@ -20,20 +19,20 @@ function Dashboard() {
   }, []);
 
   return (
-    <div className='dashboard'>
-      {
-        userInfo.map((mood) => (
-          <>
-          <h4>{mood.fields.date_entry}</h4>
-          <h4>{mood.fields.mood}</h4>
-          <h4>{mood.fields.activities}</h4>
-          <h4>{mood.fields.journal}</h4>
-            </>
-        ))
-      }
-
-    </div>
-    )
+    <>
+      <h2>Past Entries :</h2>
+    <div className="dashboard">
+      {userInfo.map((mood) => (
+        <div className="dash-summary">
+          <h5 className="dash-item"><strong>{mood.fields.date_entry}</strong></h5>
+          <h5 className="dash-item"><strong>Mood : </strong>{mood.fields.mood}</h5>
+          <h5 className="dash-item"><strong>Activities : </strong>{mood.fields.activities}</h5>
+          <h5 className="dash-item"><strong>Notes : </strong>{mood.fields.journal}</h5>
+        </div>
+      ))}
+      </div>
+      </>
+  );
 }
 
 export default Dashboard;

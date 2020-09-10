@@ -53,6 +53,12 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 18px;
+  margin: 5px 15px;
+  font-weight: 400;
+}
+
 main {
   position: absolute;
   width: 100%;
@@ -165,6 +171,15 @@ form {
 
 .dashboard {
   background-color: #FBF3EE;
+}
+
+.dash-summary {
+  margin: 40px 15px 0 15px;
+
+}
+
+.dash-item {
+
 }
 
 .footer-icon {
