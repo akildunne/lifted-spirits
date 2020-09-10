@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 const Activities = (props) => {
   const [redirect, setRedirect] = useState(false);
   const [selected, setSelected] = useState([]);
+  const [collectActivities, setCollectActivities] = useState([]);
 
   const activitiesIcons = [
     { icon: <i className="fas fa-utensils"></i>, name: "Date" },
@@ -17,14 +18,12 @@ const Activities = (props) => {
     { icon: <i className="fas fa-luggage-cart"></i>, name: "Travel" },
   ];
 
-  const collectActivities = [];
 
   const compileActivities = (name, index) => {
-    if (!collectActivities.includes(name)) {
-      collectActivities.push(name);
-    }
+    setCollectActivities((prevCollectActivities) => (
+     [...prevCollectActivities, name]
+   ))
     setSelected([...selected, index]);
-    console.log(collectActivities);
   };
 
   const setActivities = (name) => {

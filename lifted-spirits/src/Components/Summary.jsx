@@ -10,11 +10,11 @@ const Summary = (props) => {
         <h3>Below is a summary of your day.</h3>
       </div>
       <div className='summary-body'>
-        <h3 className='summary-h'>Today you were mostly:</h3>
+        <h3 className='summary-h'><strong>Today you were mostly :</strong></h3>
         <h4>{mood}</h4>
-        <h3 className='summary-h'>Things you did today:</h3>
+        <h3 className='summary-h'><strong>Things you did today :</strong></h3>
       <h4>{activities.map((activity, index) => <li key={index}>{activity}</li>)}</h4>
-      <h3 className='summary-h'>And here is what you had to say about your day:</h3>
+      <h3 className='summary-h'><strong>And here is what you had to say about your day:</strong></h3>
         <h4>{journal}</h4>
       </div>
       </>
