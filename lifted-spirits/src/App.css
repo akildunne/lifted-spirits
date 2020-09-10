@@ -82,8 +82,7 @@ main {
 
 .mood-icon:hover {
   background-color: #F66989;
-  transition-duration: 0.5s;
-  transform: scale(1);
+  /* transition-duration: 0.5s; */
 }
 
 .activity-body {
