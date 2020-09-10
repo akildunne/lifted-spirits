@@ -15,7 +15,6 @@ header {
   background-image: url("https://imgur.com/UXWwNNN.jpg");
   background-size: 375px 260px;
   background-repeat: no-repeat;
-
 }
 
 h1 {
@@ -27,16 +26,18 @@ h1 {
   padding: 8px 10px;
   display: flex;
   margin: 20px 195px 173px 60px;
+  font-weight: 400;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   margin: 45px 16px 8px 16px;
 }
 
 h3 {
   font-size: 20px;
+  font-weight: 400;
   margin: 0 17px;
 }
 
@@ -49,6 +50,7 @@ h4 {
   font-size: 18px;
   margin: 10px;
   width: 100%;
+  font-weight: 400;
 }
 
 main {
@@ -82,7 +84,7 @@ main {
 
 .mood-icon:hover {
   background-color: #F66989;
-  /* transition-duration: 0.5s; */
+  transition-duration: 0.5s;
 }
 
 .activity-body {
@@ -103,6 +105,11 @@ main {
   margin: 15px;
   background-color: #F1C920;
   border-radius: 15px;
+}
+
+.activity-icon:hover {
+  background-color: #F66989;
+  transition-duration: 0.5s;
 }
 
 .click-icon {

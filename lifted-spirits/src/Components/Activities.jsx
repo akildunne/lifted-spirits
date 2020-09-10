@@ -22,8 +22,8 @@ const Activities = (props) => {
   const compileActivities = (name, index) => {
     if (!collectActivities.includes(name)) {
       collectActivities.push(name);
-      setSelected([...selected, index]);
     }
+    setSelected([...selected, index]);
     console.log(collectActivities);
   };
 
