@@ -105,6 +105,17 @@ main {
   border-radius: 15px;
 }
 
+.click-icon {
+  color: #0C1052;
+  display: flex;
+  font-size: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #F66989;
+  border-radius: 15px;
+}
+
 .save-button {
   color: white;
   background-color: #0C1052;
@@ -115,10 +126,10 @@ main {
   margin: 10px;
 }
 
-/* .save-button:hover {
+.save-button:hover {
   opacity: 0.5;
   transition-duration: 0.5s;
-} */
+}
 
 form {
     display: flex;

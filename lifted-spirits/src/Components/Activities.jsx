@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 
 const Activities = (props) => {
   const [redirect, setRedirect] = useState(false);
+  const [selected, setSelected] = useState([]);
 
   const activitiesIcons = [
     { icon: <i className="fas fa-utensils"></i>, name: "Date" },
@@ -18,9 +19,10 @@ const Activities = (props) => {
 
   const collectActivities = [];
 
-  const compileActivities = (name) => {
+  const compileActivities = (name, index) => {
     if (!collectActivities.includes(name)) {
       collectActivities.push(name);
+      setSelected([...selected, index]);
     }
     console.log(collectActivities);
   };
@@ -42,8 +44,8 @@ const Activities = (props) => {
       </div>
       <div className="activity-body">
         {activitiesIcons.map((activity, index) => (
-          <div key={index} onClick={() => compileActivities(activity.name)}>
-            <div className="activity-icon">{activity.icon}</div>
+          <div key={index} onClick={() => compileActivities(activity.name, index)}>
+            <div className={selected.includes(index) ? "click-icon" : "activity-icon"}>{activity.icon}</div>
           </div>
         ))}
         <button className='save-button' onClick={() => setActivities(collectActivities)}>SAVE</button>
