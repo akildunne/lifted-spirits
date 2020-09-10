@@ -176,6 +176,7 @@ li {
 
 .dashboard {
   background-color: #FBF3EE;
+  padding-bottom: 80px;
 }
 
 .dash-summary {
@@ -209,26 +210,14 @@ footer {
     }
     
     header {
-      display: flex;
-      position: center;
-      top: 0;
-      width: 100%;
       height: 445px;
-      background-image: url("https://imgur.com/3fYoK55.jpg");
       background-size: 135vw 62vw;
-      background-repeat: no-repeat;
     }
     
     h1 {
-      color: white;
-      border-style: solid;
-      border-width: thin;
-      border: 2px solid white;
-      width: 25%;
       padding: 8px 20px;
       margin: 50px 45px 240px 130px;
       font-size: 55px;
-      font-weight: 400;
     }
     
     h2 {
@@ -241,11 +230,6 @@ footer {
       font-size: 30px;
       font-weight: 400;
       margin: 0 46px 0 38px;
-    }
-    
-    .summary-h {
-      margin: 0 auto;
-      width: 100%;
     }
     
     h4 {
@@ -262,33 +246,20 @@ footer {
     }
     
     main {
-      position: absolute;
-      width: 100%;
       height: auto;
-      background-color: #FBF3EE;
-      border-top-right-radius: 35px;
-      border-top-left-radius: 35px;
       margin: 421px 0 0 0;
     }
     
     .mood-body {
-      display: flex;
       justify-content: space-evenly;
-      flex-flow: row wrap;
-      align-items: center;
-      align-content: center;
       margin: 0 auto;
-      padding: 45px 85px 85px;
+      padding: 45px 105px 105px;
     }
     
     .mood-icon {
-      color: #0C1052;
-      display: flex;
       font-size: 72px;
       padding: 25px;
       margin: 15px;
-      background-color: #F1C920;
-      border-radius: 15px;
     }
     
     .mood-icon:hover {
@@ -297,26 +268,17 @@ footer {
     }
     
     .activity-body {
-      display: flex;
       justify-content: space-around;
-      flex-flow: row wrap;
-      align-items: center;
-      align-content: center;
       margin: 40px 85px 40px 85px;
-      background-color: #FBF3EE;
       height: auto;
-      padding: 0 0 80px 0;
+      padding: 0 25px 80px 25px;
     }
     
     .activity-icon {
-      color: #0C1052;
-      display: flex;
       font-size: 72px;
       padding: 25px;
       margin: 15px;
       width: 70px;
-      background-color: #F1C920;
-      border-radius: 15px;
     }
     
     .activity-icon:hover {
@@ -325,24 +287,16 @@ footer {
     }
     
     .click-icon {
-      color: #0C1052;
-      display: flex;
       font-size: 72px;
       padding: 25px;
       margin: 15px;
       width: 70px;
-      background-color: #F66989;
-      border-radius: 15px;
     }
     
     .save-button {
-      color: white;
-      background-color: #0C1052;
-      border-radius: 10px;
-      border: none;
       font-size: 35px;
       padding: 5px 30px 5px 30px;
-      margin: 10px;
+      margin: 30px;
     }
     
     .save-button:hover {
@@ -363,20 +317,13 @@ footer {
     .journal-input {
       width: 541px;
       height: 325px;
-      border-color: #F1C920;
-      border-radius: 10px;
       margin: 0 auto;
     }
     
     .summary-body {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        align-content: center;
         margin: 35px 35px 20px 30px;
         padding: 0 0 140px 25px;
         height: auto;
-        background-color: #FBF3EE;
     }
     
     .dashboard {
@@ -389,19 +336,14 @@ footer {
     }
     
     .footer-icon {
-      display: flex;
-      color: #0C1052;
       font-size: 45px;
       justify-content: space-around;
       align-items: center;
     }
     
     footer {
-      position: fixed; 
-      bottom: 0px;
-      width: 100%;
       height: 80px;
-      background-color: white;
+      padding-bottom: 5px;
     }
 }
 
