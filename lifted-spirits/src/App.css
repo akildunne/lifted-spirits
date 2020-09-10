@@ -161,6 +161,10 @@ form {
   border-radius: 10px;
 }
 
+li {
+  list-style: none;
+}
+
 .summary-body {
     display: flex;
     justify-content: space-around;
@@ -366,15 +370,18 @@ footer {
     
     .summary-body {
         display: flex;
-        justify-content: space-around;
         flex-flow: row wrap;
         align-items: center;
         align-content: center;
-        margin: 35px 35px 0px 30px;
+        margin: 35px 35px 20px 30px;
+        padding: 0 0 140px 25px;
+        height: auto;
+        background-color: #FBF3EE;
     }
     
     .dashboard {
       background-color: #FBF3EE;
+      padding: 0 20px 120px 30px;
     }
     
     .dash-summary {
