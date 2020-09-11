@@ -12,12 +12,12 @@ function App() {
   const [mood, setMood] = useState("");
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
-  const [setDash] = useState([]);
+  const [dashboard, setDashboard] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
     history.push("./");
-  }, );
+  }, []);
 
   const postInfo = async (newJournal) => {
     const fields = {
@@ -58,7 +58,7 @@ function App() {
             <Summary mood={mood} activities={activities} journal={journal} />
           </Route>
           <Route path="/dashboard">
-            <Dashboard setDash={setDash} />
+            <Dashboard setDashboard={setDashboard} />
           </Route>
         </Switch>
       </main>
