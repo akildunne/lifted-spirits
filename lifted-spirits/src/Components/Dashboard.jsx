@@ -17,26 +17,35 @@ function Dashboard() {
     getUserInfo();
   }, []);
 
- 
-  userInfo.sort((a,b) => new Date(a.fields.date_entry) - new Date(b.fields.date_entry))
-  // Date.toDateString()
- 
-  
+  userInfo.sort(
+    (a, b) => new Date(a.fields.date_entry) - new Date(b.fields.date_entry)
+  );
 
   return (
     <>
       <h2>Past Entries :</h2>
-    <div className="dashboard">
-      {userInfo.map((mood) => (
-        <div className="dash-summary">
-          <h5 className="dash-item"><strong>{mood.fields.date_entry}</strong></h5>
-          <h5 className="dash-item"><strong>Mood : </strong>{mood.fields.mood}</h5>
-          <h5 className="dash-item"><strong>Activities : </strong>{mood.fields.activities}</h5>
-          <h5 className="dash-item"><strong>Notes : </strong>{mood.fields.journal}</h5>
-        </div>
-      ))}
+      <div className="dashboard">
+        {userInfo.map((mood) => (
+          <div className="dash-summary">
+            <h5 className="dash-item">
+              <strong>{mood.fields.date_entry}</strong>
+            </h5>
+            <h5 className="dash-item">
+              <strong>Mood : </strong>
+              {mood.fields.mood}
+            </h5>
+            <h5 className="dash-item">
+              <strong>Activities : </strong>
+              {mood.fields.activities}
+            </h5>
+            <h5 className="dash-item">
+              <strong>Notes : </strong>
+              {mood.fields.journal}
+            </h5>
+          </div>
+        ))}
       </div>
-      </>
+    </>
   );
 }
 

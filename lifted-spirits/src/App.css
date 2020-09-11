@@ -1,6 +1,6 @@
 * {
-  font-family: 'Lato', sans-serif;
-  color: #0C1052;
+  font-family: "Lato", sans-serif;
+  color: #0c1052;
 }
 
 .container {
@@ -64,7 +64,7 @@ main {
   position: absolute;
   width: 100%;
   height: 528px;
-  background-color: #FBF3EE;
+  background-color: #fbf3ee;
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
   margin: 221px 0 0 0;
@@ -80,17 +80,17 @@ main {
 }
 
 .mood-icon {
-  color: #0C1052;
+  color: #0c1052;
   display: flex;
   font-size: 50px;
   padding: 10px;
   margin: 15px;
-  background-color: #F1C920;
+  background-color: #f1c920;
   border-radius: 15px;
 }
 
 .mood-icon:hover {
-  background-color: #F66989;
+  background-color: #f66989;
   transition-duration: 0.5s;
 }
 
@@ -104,35 +104,35 @@ main {
 }
 
 .activity-icon {
-  color: #0C1052;
+  color: #0c1052;
   display: flex;
   font-size: 50px;
   width: 50px;
   padding: 10px;
   margin: 15px;
-  background-color: #F1C920;
+  background-color: #f1c920;
   border-radius: 15px;
 }
 
 .activity-icon:hover {
-  background-color: #F66989;
+  background-color: #f66989;
   transition-duration: 0.5s;
 }
 
 .click-icon {
-  color: #0C1052;
+  color: #0c1052;
   display: flex;
   font-size: 50px;
   width: 50px;
   padding: 10px;
   margin: 15px;
-  background-color: #F66989;
+  background-color: #f66989;
   border-radius: 15px;
 }
 
 .save-button {
   color: white;
-  background-color: #0C1052;
+  background-color: #0c1052;
   border-radius: 10px;
   border: none;
   font-size: 20px;
@@ -146,18 +146,18 @@ main {
 }
 
 form {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    margin: 35px 35px 0 35px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  margin: 35px 35px 0 35px;
 }
 
 .journal-input {
   width: 341px;
   height: 225px;
-  border-color: #F1C920;
+  border-color: #f1c920;
   border-radius: 10px;
 }
 
@@ -166,16 +166,16 @@ li {
 }
 
 .summary-body {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    margin: 35px 35px 0px 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  margin: 35px 35px 0px 30px;
 }
 
 .dashboard {
-  background-color: #FBF3EE;
+  background-color: #fbf3ee;
   padding-bottom: 80px;
 }
 
@@ -185,7 +185,7 @@ li {
 
 .footer-icon {
   display: flex;
-  color: #0C1052;
+  color: #0c1052;
   font-size: 30px;
   justify-content: space-around;
   margin: 18px;
@@ -193,303 +193,302 @@ li {
 }
 
 footer {
-  position: fixed; 
+  position: fixed;
   bottom: 0px;
   width: 100%;
   height: 66px;
   background-color: white;
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .container {
-      display: flex;
-    }
-    
-    header {
-      height: 445px;
-      background-size: 135vw 62vw;
-    }
-    
-    h1 {
-      padding: 8px 20px;
-      margin: 50px 45px 240px 130px;
-      font-size: 55px;
-    }
-    
-    h2 {
-      font-weight: 700;
-      font-size: 35px;
-      margin: 45px 16px 8px 36px;
-    }
-    
-    h3 {
-      font-size: 30px;
-      font-weight: 400;
-      margin: 0 46px 0 38px;
-    }
-    
-    h4 {
-      font-size: 28px;
-      margin: 10px;
-      width: 100%;
-      font-weight: 400;
-    }
-    
-    h5 {
-      font-size: 28px;
-      margin: 5px 15px;
-      font-weight: 400;
-    }
-    
-    main {
-      height: auto;
-      margin: 421px 0 0 0;
-    }
-    
-    .mood-body {
-      justify-content: space-evenly;
-      margin: 0 auto;
-      padding: 45px 105px 105px;
-    }
-    
-    .mood-icon {
-      font-size: 72px;
-      padding: 25px;
-      margin: 15px;
-    }
-    
-    .mood-icon:hover {
-      background-color: #F66989;
-      transition-duration: 0.5s;
-    }
-    
-    .activity-body {
-      justify-content: space-around;
-      margin: 40px 85px 40px 85px;
-      height: auto;
-      padding: 0 25px 80px 25px;
-    }
-    
-    .activity-icon {
-      font-size: 72px;
-      padding: 25px;
-      margin: 15px;
-      width: 70px;
-    }
-    
-    .activity-icon:hover {
-      background-color: #F66989;
-      transition-duration: 0.5s;
-    }
-    
-    .click-icon {
-      font-size: 72px;
-      padding: 25px;
-      margin: 15px;
-      width: 70px;
-    }
-    
-    .save-button {
-      font-size: 35px;
-      padding: 5px 30px 5px 30px;
-      margin: 30px;
-    }
-    
-    .save-button:hover {
-      opacity: 0.5;
-      transition-duration: 0.5s;
-    }
-    
-    form {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: row wrap;
-        align-items: center;
-        align-content: center;
-        margin: 35px 35px 20px 35px;
-        padding: 8px 20px 80px 20px;
-    }
-    
-    .journal-input {
-      width: 541px;
-      height: 325px;
-      margin: 0 auto;
-    }
-    
-    .summary-body {
-        margin: 35px 35px 20px 30px;
-        padding: 0 0 140px 25px;
-        height: auto;
-    }
-    
-    .dashboard {
-      background-color: #FBF3EE;
-      padding: 0 20px 120px 30px;
-    }
-    
-    .dash-summary {
-      margin: 40px 15px 0 15px;
-    }
-    
-    .footer-icon {
-      font-size: 45px;
-      justify-content: space-around;
-      align-items: center;
-    }
-    
-    footer {
-      height: 80px;
-      padding-bottom: 5px;
-    }
+@media only screen and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) 
+{
+  .container {
+    display: flex;
+  }
+
+  header {
+    height: 445px;
+    background-size: 135vw 62vw;
+  }
+
+  h1 {
+    padding: 8px 20px;
+    margin: 50px 45px 240px 130px;
+    font-size: 55px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 45px 16px 8px 36px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 46px 0 38px;
+  }
+
+  h4 {
+    font-size: 28px;
+    margin: 10px;
+    width: 100%;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 28px;
+    margin: 5px 15px;
+    font-weight: 400;
+  }
+
+  main {
+    height: auto;
+    margin: 421px 0 0 0;
+  }
+
+  .mood-body {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 45px 105px 105px;
+  }
+
+  .mood-icon {
+    font-size: 72px;
+    padding: 25px;
+    margin: 15px;
+  }
+
+  .mood-icon:hover {
+    background-color: #f66989;
+    transition-duration: 0.5s;
+  }
+
+  .activity-body {
+    justify-content: space-around;
+    margin: 40px 85px 40px 85px;
+    height: auto;
+    padding: 0 25px 80px 25px;
+  }
+
+  .activity-icon {
+    font-size: 72px;
+    padding: 25px;
+    margin: 15px;
+    width: 70px;
+  }
+
+  .activity-icon:hover {
+    background-color: #f66989;
+    transition-duration: 0.5s;
+  }
+
+  .click-icon {
+    font-size: 72px;
+    padding: 25px;
+    margin: 15px;
+    width: 70px;
+  }
+
+  .save-button {
+    font-size: 35px;
+    padding: 5px 30px 5px 30px;
+    margin: 30px;
+  }
+
+  .save-button:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    margin: 35px 35px 20px 35px;
+    padding: 8px 20px 80px 20px;
+  }
+
+  .journal-input {
+    width: 541px;
+    height: 325px;
+    margin: 0 auto;
+  }
+
+  .summary-body {
+    margin: 35px 35px 20px 30px;
+    padding: 0 0 140px 25px;
+    height: auto;
+  }
+
+  .dashboard {
+    background-color: #fbf3ee;
+    padding: 0 20px 120px 30px;
+  }
+
+  .dash-summary {
+    margin: 40px 15px 0 15px;
+  }
+
+  .footer-icon {
+    font-size: 45px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer {
+    height: 80px;
+    padding-bottom: 5px;
+  }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .container {
-      display: flex;
-    }
-    
-    header {
-      height: 445px;
-      background-size: 100vw 50vw;
-    }
-    
-    h1 {
-      padding: 8px px;
-      margin: 40px 0 240px 80px;
-      font-size: 35px;
-    }
-    
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-      margin: 45px 16px 8px 56px;
-    }
-    
-    h3 {
-      font-size: 25px;
-      font-weight: 400;
-      margin: 0 46px 0 56px;
-    }
-    
-    h4 {
-      font-size: 20px;
-      margin: 10px;
-      width: 100%;
-      font-weight: 400;
-    }
-    
-    h5 {
-      font-size: 15px;
-      margin: 5px 15px;
-      font-weight: 400;
-    }
-    
-    main {
-      height: auto;
-      margin: 330px 0 0 0;
-    }
-    
-    .mood-body {
-      justify-content: space-evenly;
-      margin: 0 30px;
-      padding: 45px 105px 105px;
-      height: auto;
-    }
-    
-    .mood-icon {
-      font-size: 65px;
-      padding: 25px;
-      margin: 15px;
-    }
-    
-    .mood-icon:hover {
-      background-color: #F66989;
-      transition-duration: 0.5s;
-    }
-    
-    .activity-body {
-      justify-content: space-around;
-      margin: 40px 105px 40px 105px;
-      height: auto;
-      padding: 0 45px 40px 45px;
-    }
-    
-    .activity-icon {
-      font-size: 65px;
-      padding: 20px;
-      margin: 15px;
-      width: 65px;
-    }
-    
-    .activity-icon:hover {
-      background-color: #F66989;
-      transition-duration: 0.5s;
-    }
-    
-    .click-icon {
-      font-size: 65px;
-      padding: 20px;
-      margin: 15px;
-      width: 65px;
-    }
-    
-    .save-button {
-      font-size: 30px;
-      padding: 5px 30px 5px 30px;
-      margin: 30px;
-    }
-    
-    .save-button:hover {
-      opacity: 0.5;
-      transition-duration: 0.5s;
-    }
-    
-    form {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: row wrap;
-        align-items: center;
-        align-content: center;
-        margin: 35px 35px 20px 35px;
-        padding: 8px 20px 40px 20px;
-    }
-    
-    .journal-input {
-      width: 541px;
-      height: 325px;
-      margin: 0 auto;
-    }
-    
-    .summary-body {
-        margin: 35px 35px 20px 30px;
-        padding: 0 0 100px 25px;
-        height: auto;
-    }
-    
-    .dashboard {
-      background-color: #FBF3EE;
-      padding: 0 20px 120px 30px;
-    }
-    
-    .dash-summary {
-      margin: 40px 15px 0 15px;
-    }
-    
-    .footer-icon {
-      font-size: 35px;
-      justify-content: space-around;
-      align-items: center;
-    }
-    
-    footer {
-      padding-bottom: 15px;
-    }
-    
+@media screen and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) 
+{
+  .container {
+    display: flex;
+  }
+
+  header {
+    height: 445px;
+    background-size: 100vw 50vw;
+  }
+
+  h1 {
+    padding: 8px px;
+    margin: 40px 0 240px 80px;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 45px 16px 8px 56px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 46px 0 56px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: 10px;
+    width: 100%;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 15px;
+    margin: 5px 15px;
+    font-weight: 400;
+  }
+
+  main {
+    height: auto;
+    margin: 330px 0 0 0;
+  }
+
+  .mood-body {
+    justify-content: space-evenly;
+    margin: 0 30px;
+    padding: 45px 105px 105px;
+    height: auto;
+  }
+
+  .mood-icon {
+    font-size: 65px;
+    padding: 25px;
+    margin: 15px;
+  }
+
+  .mood-icon:hover {
+    background-color: #f66989;
+    transition-duration: 0.5s;
+  }
+
+  .activity-body {
+    justify-content: space-around;
+    margin: 40px 105px 40px 105px;
+    height: auto;
+    padding: 0 45px 40px 45px;
+  }
+
+  .activity-icon {
+    font-size: 65px;
+    padding: 20px;
+    margin: 15px;
+    width: 65px;
+  }
+
+  .activity-icon:hover {
+    background-color: #f66989;
+    transition-duration: 0.5s;
+  }
+
+  .click-icon {
+    font-size: 65px;
+    padding: 20px;
+    margin: 15px;
+    width: 65px;
+  }
+
+  .save-button {
+    font-size: 30px;
+    padding: 5px 30px 5px 30px;
+    margin: 30px;
+  }
+
+  .save-button:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    margin: 35px 35px 20px 35px;
+    padding: 8px 20px 40px 20px;
+  }
+
+  .journal-input {
+    width: 541px;
+    height: 325px;
+    margin: 0 auto;
+  }
+
+  .summary-body {
+    margin: 35px 35px 20px 30px;
+    padding: 0 0 100px 25px;
+    height: auto;
+  }
+
+  .dashboard {
+    background-color: #fbf3ee;
+    padding: 0 20px 120px 30px;
+  }
+
+  .dash-summary {
+    margin: 40px 15px 0 15px;
+  }
+
+  .footer-icon {
+    font-size: 35px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer {
+    padding-bottom: 15px;
+  }
 }

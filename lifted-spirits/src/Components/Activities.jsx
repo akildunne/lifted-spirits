@@ -18,11 +18,11 @@ const Activities = (props) => {
     { icon: <i className="fas fa-luggage-cart"></i>, name: "Travel" },
   ];
 
-
   const compileActivities = (name, index) => {
-    setCollectActivities((prevCollectActivities) => (
-     [...prevCollectActivities, name]
-   ))
+    setCollectActivities((prevCollectActivities) => [
+      ...prevCollectActivities,
+      name,
+    ]);
     setSelected([...selected, index]);
   };
 
@@ -43,11 +43,25 @@ const Activities = (props) => {
       </div>
       <div className="activity-body">
         {activitiesIcons.map((activity, index) => (
-          <div key={index} onClick={() => compileActivities(activity.name, index)}>
-            <div className={selected.includes(index) ? "click-icon" : "activity-icon"}>{activity.icon}</div>
+          <div
+            key={index}
+            onClick={() => compileActivities(activity.name, index)}
+          >
+            <div
+              className={
+                selected.includes(index) ? "click-icon" : "activity-icon"
+              }
+            >
+              {activity.icon}
+            </div>
           </div>
         ))}
-        <button className='save-button' onClick={() => setActivities(collectActivities)}>SAVE</button>
+        <button
+          className="save-button"
+          onClick={() => setActivities(collectActivities)}
+        >
+          SAVE
+        </button>
       </div>
     </>
   );
