@@ -351,5 +351,145 @@ footer {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      display: flex;
+    }
+    
+    header {
+      height: 445px;
+      background-size: 100vw 50vw;
+    }
+    
+    h1 {
+      padding: 8px px;
+      margin: 40px 0 240px 80px;
+      font-size: 35px;
+    }
+    
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 45px 16px 8px 56px;
+    }
+    
+    h3 {
+      font-size: 25px;
+      font-weight: 400;
+      margin: 0 46px 0 56px;
+    }
+    
+    h4 {
+      font-size: 20px;
+      margin: 10px;
+      width: 100%;
+      font-weight: 400;
+    }
+    
+    h5 {
+      font-size: 15px;
+      margin: 5px 15px;
+      font-weight: 400;
+    }
+    
+    main {
+      height: auto;
+      margin: 330px 0 0 0;
+    }
+    
+    .mood-body {
+      justify-content: space-evenly;
+      margin: 0 30px;
+      padding: 45px 105px 105px;
+      height: auto;
+    }
+    
+    .mood-icon {
+      font-size: 65px;
+      padding: 25px;
+      margin: 15px;
+    }
+    
+    .mood-icon:hover {
+      background-color: #F66989;
+      transition-duration: 0.5s;
+    }
+    
+    .activity-body {
+      justify-content: space-around;
+      margin: 40px 105px 40px 105px;
+      height: auto;
+      padding: 0 45px 40px 45px;
+    }
+    
+    .activity-icon {
+      font-size: 65px;
+      padding: 20px;
+      margin: 15px;
+      width: 65px;
+    }
+    
+    .activity-icon:hover {
+      background-color: #F66989;
+      transition-duration: 0.5s;
+    }
+    
+    .click-icon {
+      font-size: 65px;
+      padding: 20px;
+      margin: 15px;
+      width: 65px;
+    }
+    
+    .save-button {
+      font-size: 30px;
+      padding: 5px 30px 5px 30px;
+      margin: 30px;
+    }
+    
+    .save-button:hover {
+      opacity: 0.5;
+      transition-duration: 0.5s;
+    }
+    
+    form {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        margin: 35px 35px 20px 35px;
+        padding: 8px 20px 40px 20px;
+    }
+    
+    .journal-input {
+      width: 541px;
+      height: 325px;
+      margin: 0 auto;
+    }
+    
+    .summary-body {
+        margin: 35px 35px 20px 30px;
+        padding: 0 0 100px 25px;
+        height: auto;
+    }
+    
+    .dashboard {
+      background-color: #FBF3EE;
+      padding: 0 20px 120px 30px;
+    }
+    
+    .dash-summary {
+      margin: 40px 15px 0 15px;
+    }
+    
+    .footer-icon {
+      font-size: 35px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    footer {
+      padding-bottom: 15px;
+    }
     
 }

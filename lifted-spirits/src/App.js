@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route, useHistory, Link } from "react-router-dom";
 import Activities from "./Components/Activities";
-import Dashboard from './Components/Dashboard';
+import Dashboard from "./Components/Dashboard";
 import Journal from "./Components/Journal";
 import Mood from "./Components/Mood";
 import Summary from "./Components/Summary";
@@ -13,7 +13,6 @@ function App() {
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
   const [dash, setDash] = useState([]);
-
   const history = useHistory();
 
   useEffect(() => {
@@ -60,7 +59,7 @@ function App() {
             <Summary mood={mood} activities={activities} journal={journal} />
           </Route>
           <Route path="/dashboard">
-            <Dashboard setDash={setDash}/>
+            <Dashboard setDash={setDash} />
           </Route>
         </Switch>
       </main>
@@ -72,7 +71,7 @@ function App() {
             </Link>
             <Link to="/dashboard">
               <i className="fas fa-chart-pie"></i>
-              </Link>
+            </Link>
             <i className="far fa-calendar-alt"></i>
           </div>
         </nav>

@@ -12,11 +12,16 @@ function Dashboard() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records);
       setUserInfo(response.data.records);
     };
     getUserInfo();
   }, []);
+
+ 
+  userInfo.sort((a,b) => new Date(a.fields.date_entry) - new Date(b.fields.date_entry))
+  // Date.toDateString()
+ 
+  
 
   return (
     <>
