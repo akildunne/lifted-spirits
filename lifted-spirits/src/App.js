@@ -12,12 +12,12 @@ function App() {
   const [mood, setMood] = useState("");
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
-  const [dash, setDash] = useState([]);
+  const [setDash] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
     history.push("./");
-  }, []);
+  }, );
 
   const postInfo = async (newJournal) => {
     const fields = {
@@ -26,7 +26,7 @@ function App() {
       journal: newJournal,
     };
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/mood`;
-    let response = await axios.post(
+    await axios.post(
       airtableURL,
       { fields },
       {
