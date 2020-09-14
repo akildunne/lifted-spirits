@@ -12,7 +12,7 @@ function App() {
   const [mood, setMood] = useState("");
   const [activities, setActivities] = useState([]);
   const [journal, setJournal] = useState("");
-  const [dashboard, setDashboard] = useState([]);
+  const [setDashboard] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
