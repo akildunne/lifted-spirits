@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     history.push("./");
-  }, []);
+  },[]);
 
   const postInfo = async (newJournal) => {
     const fields = {
