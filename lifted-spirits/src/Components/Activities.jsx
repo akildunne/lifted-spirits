@@ -56,12 +56,14 @@ const Activities = (props) => {
             </div>
           </div>
         ))}
-        <button
-          className="save-button"
-          onClick={() => setActivities(collectActivities)}
-        >
-          SAVE
-        </button>
+        <div className="activity-save">
+         <button
+            className="save-button"
+            onClick={() => setActivities(collectActivities)}
+          >
+            SAVE
+          </button>
+        </div>
       </div>
     </>
   );

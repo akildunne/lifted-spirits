@@ -328,6 +328,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     width: 541px;
     height: 325px;
     margin: 0 auto;
+    font-size: 30px;
   }
 
   .summary-body {
@@ -367,7 +368,10 @@ and (-webkit-min-device-pixel-ratio: 1)
 
   header {
     height: 445px;
-    background-size: 100vw 50vw;
+    position: absolute;
+    background-image: url("https://i.imgur.com/3fYoK55.png");
+    background-size: 100vw 65vh;
+    background-repeat: no-repeat;
   }
 
   h1 {
@@ -408,7 +412,8 @@ and (-webkit-min-device-pixel-ratio: 1)
 
   .mood-body {
     justify-content: space-evenly;
-    margin: 0 30px;
+    flex-flow: row wrap;
+    margin: auto 40px;
     padding: 45px 105px 105px;
     height: auto;
   }
@@ -419,14 +424,10 @@ and (-webkit-min-device-pixel-ratio: 1)
     margin: 15px;
   }
 
-  .mood-icon:hover {
-    background-color: #f66989;
-    transition-duration: 0.5s;
-  }
-
   .activity-body {
-    justify-content: space-around;
-    margin: 40px 105px 40px 105px;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 40px 250px;
     height: auto;
     padding: 0 45px 40px 45px;
   }
@@ -434,13 +435,8 @@ and (-webkit-min-device-pixel-ratio: 1)
   .activity-icon {
     font-size: 65px;
     padding: 20px;
-    margin: 15px;
+    margin: 15px 20px;
     width: 65px;
-  }
-
-  .activity-icon:hover {
-    background-color: #f66989;
-    transition-duration: 0.5s;
   }
 
   .click-icon {
@@ -456,15 +452,10 @@ and (-webkit-min-device-pixel-ratio: 1)
     margin: 30px;
   }
 
-  .save-button:hover {
-    opacity: 0.5;
-    transition-duration: 0.5s;
-  }
-
   form {
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
+    flex-flow: column;
     align-items: center;
     align-content: center;
     margin: 35px 35px 20px 35px;
@@ -475,6 +466,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     width: 541px;
     height: 325px;
     margin: 0 auto;
+    font-size: 30px;
   }
 
   .summary-body {
