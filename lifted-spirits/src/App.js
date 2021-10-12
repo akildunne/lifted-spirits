@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     history.push("./");
-  },[]);
+  }, []);
 
   const postInfo = async (newJournal) => {
     const fields = {
@@ -44,23 +44,23 @@ function App() {
         <h1>Lifted Spirits</h1>
       </header>
       <main>
-        <Switch>
-          <Route exact path="/">
-            <Mood setMood={setMood} />
-          </Route>
-          <Route path="/activities">
-            <Activities setActivities={setActivities} />
-          </Route>
-          <Route path="/journal">
-            <Journal setJournal={setJournal} postInfo={postInfo} />
-          </Route>
-          <Route path="/summary">
-            <Summary mood={mood} activities={activities} journal={journal} />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard setDashboard={setDashboard} />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Mood setMood={setMood} />
+            </Route>
+            <Route path="/activities">
+              <Activities setActivities={setActivities} />
+            </Route>
+            <Route path="/journal">
+              <Journal setJournal={setJournal} postInfo={postInfo} />
+            </Route>
+            <Route path="/summary">
+              <Summary mood={mood} activities={activities} journal={journal} />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard setDashboard={setDashboard} />
+            </Route>
+          </Switch>
       </main>
       <footer>
         <nav>

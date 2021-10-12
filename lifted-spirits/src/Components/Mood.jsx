@@ -23,9 +23,11 @@ const Mood = (props) => {
   }
 
   return (
-    <div>
-      <h2>Hello Finley!</h2>
-      <h3>How are you feeling today?</h3>
+    <div className="mood-container">
+      <div className="h-container">
+        <h2>Hello Finley!</h2>
+        <h3>How are you feeling today?</h3>
+      </div>
       <div className="mood-body">
         {moods.map((mood, index) => (
           <div key={index} onClick={(e) => setMood(mood.name)}>

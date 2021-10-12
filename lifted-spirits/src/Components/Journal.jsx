@@ -16,7 +16,7 @@ const Journal = (props) => {
     <>
       <div>
         <h2>Almost Done!</h2>
-        <h3>Anything noteworth you'd like to add about your day?</h3>
+        <h3>Anything noteworthy you'd like to add about your day?</h3>
       </div>
       <form onSubmit={postInfo}>
         <label htmlFor="journal"></label>
