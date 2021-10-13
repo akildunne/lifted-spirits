@@ -42,22 +42,24 @@ const Activities = (props) => {
         <h3>What did you do today?</h3>
       </div>
       <div className="activity-body">
-        {activitiesIcons.map((activity, index) => (
-          <div
-            key={index}
-            onClick={() => compileActivities(activity.name, index)}
-          >
+        <div className="activity">
+          {activitiesIcons.map((activity, index) => (
             <div
-              className={
-                selected.includes(index) ? "click-icon" : "activity-icon"
-              }
+              key={index}
+              onClick={() => compileActivities(activity.name, index)}
             >
-              {activity.icon}
+              <div
+                className={
+                  selected.includes(index) ? "click-icon" : "activity-icon"
+                }
+              >
+                {activity.icon}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
         <div className="activity-save">
-         <button
+          <button
             className="save-button"
             onClick={() => setActivities(collectActivities)}
           >
